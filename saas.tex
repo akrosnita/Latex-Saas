@@ -437,6 +437,9 @@ When the Internet burst upon the scene in the early 1990s, the concept of softwa
 
 % You must have at least 2 lines in the paragraph with the drop letter
 % (should never be an issue)
+
+SaaS is getting a lot of attention these days. The concept of SaaS is not new and has existed for a while. It has been referred to by other names such as Application Service Provider (ASP), Managed service provider (MSP), on-demand services, cloud computing, utility computing etc\cite{Singla}. 
+
 Software as a Service (SaaS, typically pronounced 'sass') is a software that’s developed and hosted by the vendor and which the end user customer accesses over the Internet. Unlike traditional packaged applications that users install on their computers or servers, the SaaS vendor owns the software and runs it on computers in its data center. The customer does not own the software but effectively rents it, usually for a monthly fee. SaaS is sometimes also known as hosted software or by its more marketing-friendly cousin, “on-demand” \cite{Levinson}.
 
 
@@ -532,7 +535,28 @@ SaaS software vendors may let the application to download by the customer on the
 % command of the stfloats package.
 
 \subsection{SaaS and SOA}
-Considerable confusion arises in distinguishing between software as a service (SaaS) and service-oriented architecture (SOA). The difference between SaaS and SOA is that the former is a software-delivery model whereas the latter is a software-construction model \cite{laplante2008s}
+Considerable confusion arises in distinguishing between software as a service (SaaS) and service-oriented architecture (SOA). The difference between SaaS and SOA is that the former is a software-delivery model whereas the latter is a software-construction model \cite{laplante2008s}. SOA basically involves exposing functionality from distributed systems in the form of stateless functions; this is similar to other distributed system architectures such as CORBA and DCOM\cite{Singla}.
+
+SaaS deployments are revenue generating businesses targeted directly at end users, whereas SOA deployments are usually created within IT environments and the services are exposed to other applications as opposed to end users\cite{Singla}. Author\cite{Singla} also said that SaaS and SOA are very complementary in nature. In fact, they can't exist without each other.
+
+\begin{figure}[hbt]
+%\begin{center}
+\setlength{\unitlength}{0.0105in}
+\begin{picture}(850,400)(0,0)
+
+\includegraphics[scale=0.5]{saasVsSOA.png} 
+\end{picture}
+\caption{SaaS Vs SOA\cite{Singla}}
+\end{figure}
+\medskip 
+
+What are the key elements of a SaaS platform? Every SaaS platform has to have a few core things in place, these are: multi-tenancy, ordering and provisioning, user authentication and authorization, service catalog and pricing, service monitoring, SLA management, usage metering, billing, invoicing and payments. Besides these core components, a SaaS platform also needs to support the usual business functions such as marketing, lead tracking, sales, customer support, revenue and financial management, partner settlement, business intelligence etc\cite{Singla}.
+
+Now, let's take a look at the key elements of a SOA platform. A typical SOA platform deployment consists of service producers and consumers from across the enterprise. Service producers publish services via the SOA platform, which get consumed by multiple service consumers. There has been a lot of focus on the technical aspects of a SOA platform e.g. service bus, communication protocols (e.g. SOAP), service interface definitions (e.g. WSDL), service discovery (e.g. UDDI) etc. The importance of service monitoring, management and governance is also well understood, but this is not enough. In a typical large enterprise, the service producers and consumers could be applications or systems belonging to different departments, organizations or even subsidiaries within the enterprise. In such environments, services cannot be produced and consumed informally without proper service management in place since there is a cost associated to hosting and exposing a service by the service producer. In order to derive this cost, the total cost of operations or ownership (TCO) needs to be taken into account besides the cost to create the service. Also, there are security concerns around publishing the services openly. This leads to the need for service catalog management, provisioning, authentication, authorization, usage metering and cross-department charging. As highlighted before, these are also the core elements of a SaaS platform. So as an enterprise SOA deployment matures, it is suddenly in need of the core functions of a SaaS platform\cite{SIngla}.
+
+Let's take a look at the flip side of this. Every SaaS platform needs to support the ability to add new service offerings and modify existing offerings in the service catalog with minimal changes to the core platform components. These additions or modifications should not lead to creation of a whole new SaaS platform for every service. Instead, all the basic functionalities of the SaaS platform such as ordering and provisioning, authentication and authorization, service catalog and pricing, metering, billing and invoicing, payments etc should be reused for multiple service offerings. Such reuse necessitates the need for a SOA platform. Further, use of a SOA platform enables other advantages such as a more flexible and plug-n-play architecture leading to lower overall cost of ownership\cite{Singla}.
+
+It is probably quite intuitive that most complex architectures including SaaS architecture will benefit from SOA capabilities, but a SOA platform needing SaaS capabilities is not that intuitive. There has been a lot of hype around SOA for a while but most SOA deployments in large enterprises have either not been successful or have not provided the expected ROI because the SaaS elements are missing in these deployments. In order to realize the full benefits of large-scale SOA deployments, it is essential to have a SaaS like service management functionality in place. This is where SOA and SaaS together can enable the concept of "IT as a service" and help take IT to the next natural step in its evolution\cite{Singla}.
 
 \section{The Benefits}
 For many companies large and small, SAAS is the best way to roll out new technology. The staying power of SAAS has arisen for several reasons \cite{finch2007all}:
@@ -556,7 +580,7 @@ Instead of spending \$60,000 all at once, for example, customers pay for the sof
 Most vendors understand that data must be backed up religiously, and security is the top priority. Customers' IT departments are typically pulled in many directions and can't be as focused on one technology. Customers can assume their data security is probably safer when it's hosted.
 
 \section{The Vendors}
-The example of success companies are Salesforce.com Inc.\cite{finch2007all,Levinson}, RightNow Technologies Inc\cite{finch2007all}, LeanLogistics\cite{Levinson} and Ketera\cite{Levinson}.
+The example of success companies are Salesforce.com Inc.\cite{finch2007all,Levinson}, RightNow Technologies Inc\cite{finch2007all}, LeanLogistics\cite{Levinson}, Cisco WebEx\cite{Singla}  and Ketera\cite{Levinson}.
 
 \section{The Examples}
 Some example of the SaaS are\cite{Gruman}:
@@ -570,13 +594,13 @@ Some example of the SaaS are\cite{Gruman}:
 
 \begin{figure}[hbt]
 %\begin{center}
-\setlength{\unitlength}{0.0105in}%
+\setlength{\unitlength}{0.0105in}
 \begin{picture}(0,630)(0,0)
 
 \includegraphics[scale=0.7]{saas_today.png} 
 \end{picture}
 %\end{center}
-\caption{SaaS Today}
+\caption{SaaS Today\cite{Gruman}}
 \end{figure}
 \medskip 
 The rank of application used as SaaS depicted in Figure 1. It shows that the largest application using SaaS is Customer Relationship Management (about 18 percent), followed by Human Resource (15 percent) and Procurement Software (12 percent).
