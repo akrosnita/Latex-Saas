@@ -404,7 +404,7 @@ Email: akrosnita@gmail.com}
 
 \begin{abstract}
 %\boldmath
-Software as a Service (SaaS, typically pronounced 'sass') is a model of software deployment whereby a provider licenses an application to customers for use as a service on demand. 
+Software as a Service (SaaS, typically pronounced 'sass') is a model of software deployment whereby a provider licenses an application to customers for use as a service on demand. This paper will discuss about the benefits, issues and challenges. The author also mention about the software type, vendor and customers industry that using SaaS.
 
 \end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
@@ -438,7 +438,7 @@ When the Internet burst upon the scene in the early 1990s, the concept of softwa
 % You must have at least 2 lines in the paragraph with the drop letter
 % (should never be an issue)
 
-SaaS is getting a lot of attention these days. The concept of SaaS is not new and has existed for a while. It has been referred to by other names such as Application Service Provider (ASP), Managed service provider (MSP), on-demand services, cloud computing, utility computing etc\cite{Singla}. 
+SaaS is getting a lot of attention these days. The concept of SaaS is not new and has existed for a while. It has been referred to by other names such as Application Service Provider (ASP), Managed service provider (MSP)\cite{Gruman,Singla}, on-demand services, business process outsourcer (BPO), outsourced IT models\cite{Gruman}, cloud computing, utility computing etc\cite{Singla}. 
 
 Software as a Service (SaaS, typically pronounced 'sass') is a software that’s developed and hosted by the vendor and which the end user customer accesses over the Internet. Unlike traditional packaged applications that users install on their computers or servers, the SaaS vendor owns the software and runs it on computers in its data center. The customer does not own the software but effectively rents it, usually for a monthly fee. SaaS is sometimes also known as hosted software or by its more marketing-friendly cousin, “on-demand” \cite{Levinson}.
 
@@ -542,7 +542,7 @@ SaaS deployments are revenue generating businesses targeted directly at end user
 \begin{figure}[hbt]
 %\begin{center}
 \setlength{\unitlength}{0.0105in}
-\begin{picture}(850,400)(0,0)
+\begin{picture}(0,400)(0,0)%x=850
 
 \includegraphics[scale=0.5]{saasVsSOA.png} 
 \end{picture}
@@ -557,25 +557,25 @@ Now, let's take a look at the key elements of a SOA platform. A typical SOA plat
 
 Let's take a look at the flip side of this. Every SaaS platform needs to support the ability to add new service offerings and modify existing offerings in the service catalog with minimal changes to the core platform components. These additions or modifications should not lead to creation of a whole new SaaS platform for every service. Instead, all the basic functionalities of the SaaS platform such as ordering and provisioning, authentication and authorization, service catalog and pricing, metering, billing and invoicing, payments etc should be reused for multiple service offerings. Such reuse necessitates the need for a SOA platform. Further, use of a SOA platform enables other advantages such as a more flexible and plug-n-play architecture leading to lower overall cost of ownership\cite{Singla}.
 
-It is probably quite intuitive that most complex architectures including SaaS architecture will benefit from SOA capabilities, but a SOA platform needing SaaS capabilities is not that intuitive. There has been a lot of hype around SOA for a while but most SOA deployments in large enterprises have either not been successful or have not provided the expected ROI because the SaaS elements are missing in these deployments. In order to realize the full benefits of large-scale SOA deployments, it is essential to have a SaaS like service management functionality in place. This is where SOA and SaaS together can enable the concept of "IT as a service" and help take IT to the next natural step in its evolution\cite{Singla}.
+It is probably quite intuitive that most complex architectures including SaaS architecture will benefit from SOA capabilities, but a SOA platform needing SaaS capabilities is not that intuitive. There has been a lot of hype around SOA for a while but most SOA deployments in large enterprises have either not been successful or have not provided the expected ROI because the SaaS elements are missing in these deployments. In order to realize the full benefits of large-scale SOA deployments, it is essential to have a SaaS like service management functionality in place. This is where SOA and SaaS together can enable the concept of ``IT as a service" and help take IT to the next natural step in its evolution\cite{Singla}.
 
 \subsection{How is SaaS different from an ASP?}
 SaaS evolved from the application service provider (ASP) model. When ASPs sprang up in the 1990s, they offered essentially the same thing SaaS vendors offer today: hosted applications delivered over the Internet. The problem ASPs ran into was that they tried to be all things to all people, and they buckled under the weight of their own infrastructure. In trying to serve the unique needs of each of their customers, ASPs lost the economies of scale that were necessary for them to provide their services in a cost-effective manner\cite{Levinson}. 
 
-Today’s successful SaaS vendors, such as Salesforce.com, LeanLogistics and Ketera, have solved the scalability and reliability problems that dogged the ASPs and ultimately led to their downfall. Instead of trying to be all things to all people, they offer one-size-fits-all solutions. That is, all customers of a SaaS vendor use the same software. The underlying code is the same for all customers and cannot be customized. Any features or functionality that the SaaS vendor adds to the software based on a customer’s feedback becomes available to all customers. This multi-tenancy approach differentiates SaaS vendors from the original ASPs and from other vendors of hosted, “on-demand” software and gives SaaS vendors the economies of scale they need to offer their software cost-effectively—and make upgrading their customers to new versions of the software a relative cinch\cite{Levinson}. 
+Today’s successful SaaS vendors, such as Salesforce.com, LeanLogistics and Ketera, have solved the scalability and reliability problems that dogged the ASPs and ultimately led to their downfall. Instead of trying to be all things to all people, they offer one-size-fits-all solutions. That is, all customers of a SaaS vendor use the same software. The underlying code is the same for all customers and cannot be customized. Any features or functionality that the SaaS vendor adds to the software based on a customer's feedback becomes available to all customers. This multi-tenancy approach differentiates SaaS vendors from the original ASPs and from other vendors of hosted, “on-demand” software and gives SaaS vendors the economies of scale they need to offer their software cost-effectively and make upgrading their customers to new versions of the software a relative cinch\cite{Levinson}. 
 
 
 
 \section{The Benefits}
 For many companies large and small, SaaS is the best way to roll out new technology. The staying power of SaaS has arisen for several reasons:
 
-\subsection{The cost of entry is low.}
+\subsection{Low cost of entry.}
 Instead of paying lots of money to roll out complex technology across the entire company, customers can roll out just one test department of, say, 20 people. The risk is very low if it fails, and the company doesn't have to involve its busy IT staff\cite{finch2007all}.
 
 SaaS implementations are also cheaper because companies don’t have to buy additional hardware or infrastructure to make the software work, so there are no capital expenditures with SaaS\cite{Levinson}.
 
 \subsection{Less Time Deployment.}
-SaaS deployments usually take less time than on-premise software implementations simply because the customers not installing software on every user’s computer. Realistically, implementations can take between three and six months  depending on the size and complexity of the implementation. Because SaaS is easier and quicker to implement than traditional software, the customer can achieve ROI faster and provided the users adopt the software\cite{Levinson}.
+SaaS deployments usually take less time\cite{Gruman} than on-premise software implementations simply because the customers not installing software on every user’s computer\cite{Levinson}. Realistically, implementations can take between three and six months  depending on the size and complexity of the implementation. Because SaaS is easier and quicker to implement than traditional software, the customer can achieve ROI faster and provided the users adopt the software\cite{Levinson}.
 
 \subsection{The onus is on the vendor.}
 If the vendor's software is broken, the vendor won't be getting money from any customer for long. The vendor is motivated to fix the problem\cite{finch2007all}.
@@ -584,6 +584,13 @@ If the vendor's software is broken, the vendor won't be getting money from any c
 \subsection{The vendor works for the buyer.}
 Customers don't have to rely on their IT departments to install an application. Everything is running securely at the vendor's location\cite{finch2007all}.
 
+The advantage in this for the vendor is that it spends less time managing compatibility and upgrades across several versions of the software. It also spends less to support customers, as they all use the same version and they don’t run it on their own equipment\cite{Gruman}.
+
+\subsection{Easier Access to Current Technology.}
+This is because changes are made just to the one code base\cite{Gruman}.
+
+\subsection{Fewer Bugs.} 
+This is also advantage for the vendor because having one code base reduces the complexity that can lead to errors\cite{Gruman}.
 
 \subsection{Less-risky investment.}
 Instead of spending \$60,000 all at once, for example, customers pay for the software monthly. The monetary risk is lower and less scary\cite{finch2007all}.
@@ -592,17 +599,7 @@ Instead of spending \$60,000 all at once, for example, customers pay for the sof
 Most vendors understand that data must be backed up religiously, and security is the top priority. Customers' IT departments are typically pulled in many directions and can't be as focused on one technology. Customers can assume their data security is probably safer when it's hosted\cite{finch2007all}.
 
 \section{The Vendors}
-The example of success companies are Salesforce.com Inc.\cite{finch2007all,Levinson}, RightNow Technologies Inc\cite{finch2007all}, LeanLogistics\cite{Levinson}, Cisco WebEx\cite{Singla}  and Ketera\cite{Levinson}.
-
-\section{The Examples}
-Some example of the SaaS are\cite{Gruman}:
-\begin{list}{-}{ }
- \item Customer Relationship Management(CRM) Software
- \item Human Resource
- \item Procurement
- \item Document Management
-
- \end{list}
+The example of success companies are Salesforce.com Inc.\cite{finch2007all,Levinson}, Journyx, Webex, GotToMyPC, Concur, RightNow Technologies Inc\cite{finch2007all}, LeanLogistics\cite{Levinson}, Cisco WebEx\cite{Singla}  and Ketera\cite{Levinson}.
 
 \begin{figure}[hbt]
 %\begin{center}
@@ -615,10 +612,28 @@ Some example of the SaaS are\cite{Gruman}:
 \caption{SaaS Today\cite{Gruman}}
 \label{fig2}
 \end{figure}
-\medskip 
+\medskip
+
+\section{The Examples}
+Some example of the SaaS are\cite{Gruman}:
+\begin{list}{-}{ }
+ \item Customer Relationship Management(CRM) Software
+ \item Human Resource
+ \item Procurement
+ \item Document Management
+
+ \end{list}
+\bigskip 
+
 The rank of application used as SaaS depicted in Figure \ref{fig2}. It shows that the largest application using SaaS is Customer Relationship Management (about 18 \%), followed by Human Resource (15 \%) and Procurement Software (12 \%).
 
 The figure also shows the industrial sectors that used the application. The highest sector is technology industry (18 \%), followed by both financial services and utilities (15 \%) and the media (12 \%). This figure shows that Government in the sixth place by vertical market.
+
+Figure \ref{fig2} shows that SaaS is best known in the CRM space, thanks to Salesforce.com’s aggressive marketing and its ease of use for salespeople compared to CRM offerings from companies such as Oracle and SAP, aided by the fact that sales groups often have discretion as to the applications they use, notes AMR’s Bois. But SaaS also is widely used in the human resources and procurement spaces, both of which have a history of being served by outside firms in a service bureau model. Examples include Concur Technologies’ expense and travel management software, SuccessFactor’s employee performance management software, ADP’s benefits management software and Ariba’s procurement software. SaaS applications also can be found in a wide variety of specialty areas, such as Web analytics, container allocation analysis for shippers and help desk management—all of which have histories of being handled by outside service bureaus. Applications in these spaces typically rely on batched data exchange and widely deployed, standard interfaces to internal applications, making SaaS an easy fit, notes Tier1 analyst Mankowski\cite{Gruman}.
+
+
+
+A third area that has seen broad SaaS adoption is Web conferencing, offered by WebEx, Citrix Online and Adobe. Applications such as Web conferencing and surveying work well with a SaaS approach because they let IT offer users functionality without having to invest in expertise and operations\cite{Gruman}.
 
 
 \section{Issues and Challenges}
@@ -626,15 +641,56 @@ The figure also shows the industrial sectors that used the application. The high
 The customers have to concerns about keeping their data in a SaaS vendor's systems because they have no direct control over those systems - and because of the horror stories that emerged from the ASP implosion of 2000 and 2001. When those ASPs went out of business, many of them left their customers without access to their data, and some ASPs even sold the data they hosted\cite{Levinson}.
 
 
-\subsection{Server and software maintenance}
-blablabla
+\subsection{Server and Software Maintenance}
+How and how often the data will backup is an issue to the customers.  How long the backup's kept and are the backup stored off-site also the questions that the provider must answer\cite{finch2007all}. Others questions are: Is the data center at computer's location staffed 24 hours a day, seven days a week? and What staff is on-site?
 
 \subsection{Building the Contract}
-This experience taught customers valuable lessons in negotiating contracts: Always make sure they'll have access to the data and the software or source code in the event the service provider goes out of business. 
+This experience taught customers valuable lessons in negotiating contracts: Always make sure they'll have access to the data and the software or source code in the event the service provider goes out of business\cite{Levinson}. 
+
+\subsection{SaaS is not Unique}
+Because SaaS designed for use by hundreds of other companies, the customer have to consider whether they want to rely on it\cite{Gruman}. The SaaS also make sense if the process is not complex. The customer also have to realized that if they want to success with SaaS they have to accept that everything cannot be customized and it's not unique to specific organization.
+
+With SaaS, there's just one code base for the software, used by all customers, in what's called a multitenant architecture. While the software might be configurable by users to their individual needs, the code itself is the same for all and is not customizable for any individual customer. Any enhancements made based on one customer's requests immediately become available to all customers. So the application isn't one that differentiates the company competitively, such as improving customer service or enabling higher margins relative to competitors\cite{Gruman}. 
+
+\subsection{Integration}
+The convenience of using SaaS applications, especially when adoption is driven by business users, can mask a significant IT challenge. That challenge is integration, both with other enterprise applications and with data sources\cite{Gruman}. 
+
+\section{Key Criteria To Apply SaaS}
+In \cite{Levinson} there are key criteria to decide SaaS implementation to the organization:
+\begin{list}{\~}{ }
+ \item the type of process or function for a SaaS solution
+ \item the extent to the need to customize the SaaS solution
+ \item the extent to which it needs to be integrated with other systems (both internal and external)
+ \item the maturity of the application\\ 
+
+ \end{list}
+ 
+ 
+ 
+ There are also questions suggested by \cite{finch2007all} that one must ask  when dealing with reputable vendor to choose SaaS as a solution:
+ \begin{list}{\~}{ }
+ \item How well has the vendor integrated its service operation into its core business? 
+ \item How many clients do they have on the SaaS solution today?
+ \item Is the software producer hosting the software for the vendor or have they outsourced that to a completely separate company that basically acts like reseller?
+ \item Where is the computer that will be use to serve the application? 
+  \item What data do they backup and how often?  
+  \item Is the data center at the computer's location staffed 24 hours aday, seven days a week? 
+   \item What physical security measures are in the data center?
+ \item Do they have a disaster recovery plan if your data center becomes unavailable? 
+  \item Are servers dedicated to each customer, or do multiple customers share single server?  
+  \item How many Internet Service Providers (ISPs) do they buy connectivity from?  
+
+ \end{list}  
 
 
 \section{Conclusion}
-The conclusion is using the SaaS will cut cost to the customer because they do not have to build their own data center and the cost of application development will much more reduced\cite{Gruman}.
+The conclusion from the foundation is using the SaaS will benefit both the customer and vendor. Some of the benefits are it will cut cost for the customers because they do not have to build their own data center and the cost of application development will much more reduced\cite{Gruman}; and also for the vendor for building one data center and standard software for all customers.
+
+
+There are also issues and challenges such as security, maintenance and uncustomizable of the software to the customers.
+
+
+Knowing the benefits, issues and challenges so that the organization can refer to the list of things to consider for choosing SaaS as a solution.   
 
 % conference papers do not normally have an appendix
 
